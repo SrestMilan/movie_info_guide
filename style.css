@@ -23,3 +23,33 @@ body {
   border-radius: 0.6em;
   box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0);
 }
+
+.movie-search-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2em;
+}
+
+.movie-search-container input,
+.movie-search-container button {
+  font-size: 0.9em;
+  outline: none;
+  border-radius: 0.3em;
+}
+
+.movie-search-container input {
+  background-color: transparent;
+  border: 1px solid #a0a0a0;
+  padding: 0.7em;
+  color: #ffffff;
+}
+
+.movie-search-container input:focus {
+  border-color: #ffffff;
+}
+
+.movie-search-container button {
+  background-color: #ffb92a;
+  border: none;
+  cursor: pointer;
+}
