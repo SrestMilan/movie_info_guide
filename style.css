@@ -7,7 +7,7 @@
 
 body {
   height: 100vh;
-  background: linear-gradient(#000000 50%, #ffb92a 50%);
+  background: linear-gradient(#000000 50%, #ffba3b 50%);
 }
 
 .container {
@@ -49,7 +49,7 @@ body {
 }
 
 .movie-search-container button {
-  background-color: #ffb92a;
+  background-color: #ffba3b;
   border: none;
   cursor: pointer;
 }
