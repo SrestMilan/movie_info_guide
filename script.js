@@ -28,12 +28,28 @@ let getMovieDetail = () => {
         outputResult.innerHTML = `<div class="movie-info">
         <img src=${data.Poster} class="poster"/>
         <div>
-        <h2 class="title">${data.Title}<h2/>
-        
+        <h2 class="title">${data.Title}</h2>
+
+        <div class="rating">
+        <img src="Image/star.png"/>
+        <h4>${data.imdbRating}</h4>
         </div>
-        
+        <div class="details">
+        <span>${data.Rated}</span>
+        <span>${data.Year}</span>
+         <span>${data.Runtime}</span>
         </div>
-        
+        <div class="genre">
+        <div>
+        ${data.Genre.split(",").join("<div></div>")}
+        </div>
+        </div>
+        </div> 
+        <h3>Plot:</h3> 
+        <p>${data.Plot}</p>
+        <h3>Cast:</h3>
+        <p>${data.Actors}</p>
+        </div>  
         `;
       });
   }
