@@ -9,7 +9,7 @@ let getMovieDetail = () => {
   let apiUrl = `http://www.omdbapi.com/?t=${movieName}&apikey=fc30ab42`;
 
   // if input is empty
-  if (movieName <= 0) {
+  if (movieName.length <= 0) {
     outputResult.innerHTML = `<h3 class="message">Please enter a movie name</h3>`;
   } else {
     fetch(apiUrl)
@@ -25,6 +25,16 @@ let getMovieDetail = () => {
         console.log(data.Genre);
         console.log(data.Plot);
         console.log(data.Actors);
+        outputResult.innerHTML = `<div class="movie-info">
+        <img src=${data.Poster} class="poster"/>
+        <div>
+        <h2 class="title">${data.Title}<h2/>
+        
+        </div>
+        
+        </div>
+        
+        `;
       });
   }
 };

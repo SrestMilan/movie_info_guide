@@ -53,3 +53,7 @@ body {
   border: none;
   cursor: pointer;
 }
+
+#output {
+  color: #ffffff;
+}
