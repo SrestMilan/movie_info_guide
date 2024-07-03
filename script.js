@@ -55,5 +55,5 @@ let getMovieDetail = () => {
   }
 };
 
-bttnSearch.addEventListener("click", retriveMovie);
+bttnSearch.addEventListener("click", getMovieDetailggi);
 window.addEventListener("load", getMovieDetail);
