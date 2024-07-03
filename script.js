@@ -15,16 +15,6 @@ let getMovieDetail = () => {
     fetch(apiUrl)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        console.log(data.Poster);
-        console.log(data.Title);
-        console.log(data.imdbRating);
-        console.log(data.Rated);
-        console.log(data.Year);
-        console.log(data.Runtime);
-        console.log(data.Genre);
-        console.log(data.Plot);
-        console.log(data.Actors);
         outputResult.innerHTML = `<div class="movie-info">
         <img src=${data.Poster} class="poster"/>
         <div>
@@ -49,7 +39,7 @@ let getMovieDetail = () => {
         <p>${data.Plot}</p>
         <h3>Cast:</h3>
         <p>${data.Actors}</p>
-        </div>  
+         
         `;
       });
   }
